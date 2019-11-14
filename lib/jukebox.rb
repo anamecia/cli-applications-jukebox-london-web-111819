@@ -27,11 +27,11 @@ end
 def play (songs)
   puts "Please enter a song name or number:"
   user_input = gets.strip
-  list_songs = list(songs)
+  #list_songs = list(songs)
   i = 0
   while i < list_songs.length do 
-    if list_songs[i].include? user_input
-      puts "Playing #{list_songs[i]}"
+    if songs[i].include? user_input
+      puts "Playing #{songs[i]}"
       return
     end
     i += 1
