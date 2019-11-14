@@ -29,7 +29,7 @@ def play (songs)
   user_input = gets.strip
   #list_songs = list(songs)
   i = 0
-  while i < list_songs.length do 
+  while i < songs.length do 
     if songs[i].include? user_input
       puts "Playing #{songs[i]}"
       return
