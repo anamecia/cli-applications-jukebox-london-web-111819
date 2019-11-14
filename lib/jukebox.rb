@@ -32,8 +32,6 @@ def play (songs)
   while i < list_songs.length do 
     if list_songs[i].include? user_input
       puts "Playing #{list_songs[i]}"
-    else
-     
     end
     i += 1
   end
