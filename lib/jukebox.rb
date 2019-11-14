@@ -32,10 +32,12 @@ def play (songs)
   while i < list_songs.length do 
     if list_songs[i].include? user_input
       puts "Playing #{list_songs[i]}"
+      return
     end
     i += 1
   end
-   puts "Invalid input, please try again"
+  
+  puts "Invalid input, please try again"
 end
 
 
